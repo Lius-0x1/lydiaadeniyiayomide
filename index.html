@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lydia Adeniyi | Nurse Portfolio</title>
+  <style>
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      
+    }
+    .highlight-item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .highlight-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 270px;
+    }
+    
+    .highlight-item p {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #444;
+    }
+  
+
+    :root {
+      --primary: #2C3E50;
+      --accent: #3498DB;
+      --bg-light: #f5f5f5;
+      --text-dark: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2c80b4;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills div {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .skills div:hover {
+      transform: translateY(-5px);
+      background: #eaf6ff;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="newlogo.jpg" alt="Lydia Adeniyi" style="padding: 10px;">
+    <h1>Lydia Adeniyi</h1>
+    <p>A nurse passionate about health promotion and community care || Nurse Advocate || Dedicated to continuous growth, health awareness, and impact in the health sector || professional researcher.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an enthusiastic nursing professional with a deep passion for promoting health and community-centered care. I advocate for accessible, holistic healthcare and dedicate myself to delivering compassionate service that makes a difference in lives.</p>
+    </section>
+
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <ul>
+        <li><strong>B.Sc. Nursing:</strong> Osun State University (2019–2024)</li>
+        <li><strong>Clinical Rotation:</strong>Osun state university teaching Hospital</li>
+      </ul>
+      <br>
+    <h1> Clinical Experiences:</h1>
+      <p>
+        Clinical experiences: During my clinical postings in school, I completed clinical rotations in Medical-Surgical, Pediatric, Accident and emergency unit ,Midwifery and ICU units. I assessed and evaluated patients' conditions, developed and implemented individualized care plans, collaborated with interdisciplinary teams to coordinate care, and promote positive patient outcomes.
+      </p>
+            <br><br>
+      <a href="Adeniyi Lydia CV.docx" class="btn" download>Download CV</a>
+    </section>
+
+    <section id="skills">
+      <h2>Personal Competencies & Skills</h2>
+      <div class="skills">
+        <div><img src="inter.PNG" width="50"><br>Interpersonal Skills</div>
+        <div><img src="team.PNG" width="50"><br>Team Spirit and Collaboration</div>
+        <div><img src="hard.PNG" width="50"><br>Hardworking</div>
+        <div><img src="com.PNG" width="50"><br>Effective Communication</div>
+        <div><img src="balance.PNG" width="50"><br>Good at Balancing Work</div>
+        <div><img src="solve.PNG" width="50"><br>Problem Solving</div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://adeniyilydiaayomide@gmail.com" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" required><br>
+        <label for="message">Message</label><br>
+        <textarea name="message" required></textarea><br><br>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </div>
+   <br>
+ 
+
+
+  <h2> Professional Highlights </h2>
+
+  <div class="highlight-grid">
+    <div class="highlight-item">
+      <img src="ph.jpg" alt="">
+      <p>Mental health posting at Neuropsychiatric Hospital Aro, Abeokuta</p>
+    </div>
+    <div class="highlight-item">
+      <img src="ph3.jpg" alt="">
+      <p>Leadership and management posting</p>
+    </div>
+    <div class="highlight-item">
+      <img src="ph4.jpg" alt=""  height="">
+      <p>Labour ward and Midwifery posting </p>
+    </div>
+    <div class="highlight-item">
+      <img src="ph1.jpg" alt="">
+      <p>Acquiring RN – November 2023</p>
+    </div>
+    <div class="highlight-item">
+      <img src="ph2.jpg" alt="" >
+      <p>RN </p>
+    </div>
+    <div class="highlight-item">
+      <img src="ph5.jpg" alt="" >
+      <p>Primary health care for community health post at alekuwodo primary health care osogbo</p>
+    </div>
+  </div>
+
+
+   
+   <h2>Location</h2>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244356497!2d7.367466123871982!3d9.024416366422084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1748177154174!5m2!1sen!2sng" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+  <footer>
+    <section style="padding: 10px; justify-content:center; ">
+        
+        <a href="https://www.facebook.com/share/1JJbk7BCnZ/">
+          <img src="download-1.png" width="20px"height="20px" style="margin-left:10px;">
+        </a> 
+        <a href="https://www.instagram.com/lydia_hardeniyi?utm_source=qr&igsh=dTc3NmxvbjFvMzd6"> 
+          <img src="images-1.png" width="20px"height="20px" style="margin-left: 10px;">
+        </a> 
+        <a href="https://www.linkedin.com/in/lydia-adeniyi-212423240?utm_source=share&utm_campaign=share_via&utm_content=profile&  utm_medium=android_app"> 
+            <img src="images.png" width="20px"height="20px" style="margin-left: 10px;">
+          </a>
+       <a href="mailto:adeniyilydiaayomide@gmail.com">
+          <img src="download-4.png" width="20px"height="20px" style="margin-left: 10px;">
+         </a>
+         <a href="tel:+2349060547265">
+           <img src="phone-call.png" width="20px"height="20px" style="margin-left: 10px; background-color:white;">
+         </a>
+ 
+    </section>   <br>
+    <p>&copy; 2025 Lydia Adeniyi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
